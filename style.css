@@ -1,0 +1,80 @@
+body {
+    font-family: 'Embed code', sans-serif; /* Aplicando a fonte do Google */
+    margin: 0;
+    padding: 0;
+    background-image: url('');
+    background-color: #e51414; /* Cor de fundo */
+    color: #333; /* Cor do texto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center; /* Centraliza o texto */
+}
+
+.container {
+    max-width: 600px; /* Largura máxima da container */
+    padding: 20px; /* Espaçamento interno */
+}
+
+h1 {
+    font-size: 36px; /* Tamanho da fonte do título */
+    font-weight: 700; /* Negrito */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Espaçamento abaixo da barra de pesquisa */
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 300px; /* Largura da barra de pesquisa */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF; /* Cor do botão */
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+h2 {
+    font-size: 24px; /* Tamanho da fonte do nome do console */
+    margin: 20px 0; /* Espaçamento acima e abaixo do nome */
+}
+
+p {
+    font-size: 16px; /* Tamanho da fonte da descrição */
+    margin-bottom: 20px; /* Espaçamento abaixo da descrição */
+}
+
+.more-info {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.more-info:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px; /* Tamanho da fonte do rodapé */
+    color: #666; /* Cor do texto do rodapé */
+}
