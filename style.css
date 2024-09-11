@@ -1,80 +1,129 @@
+* {
+    font-family: 'Comic Sans MS';
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Embed code', sans-serif; /* Aplicando a fonte do Google */
+    background-image: url('./images/games.png');
+    background-size: auto;
+    color: #333;
     margin: 0;
     padding: 0;
-    background-image: url('');
-    background-color: #e51414; /* Cor de fundo */
-    color: #333; /* Cor do texto */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20rem;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+header img {
+    max-width: 30rem;
+    margin-right: 3rem;
+}
+
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    text-align: center; /* Centraliza o texto */
+    z-index: 1;
+    position: relative;
+
 }
 
-.container {
-    max-width: 600px; /* Largura máxima da container */
-    padding: 20px; /* Espaçamento interno */
+.pesquisar {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 6rem;
+    position: relative;
+    top: 5rem;
+    z-index: 10;
 }
 
-h1 {
-    font-size: 36px; /* Tamanho da fonte do título */
-    font-weight: 700; /* Negrito */
-    margin-bottom: 20px; /* Espaçamento abaixo do título */
+.pesquisar input {
+    background: #333;
+    color: #f2f2f2;
+    width: 30rem;
+    height: .2rem;
+    border: none;
+    border-radius: 5.2rem;
+    padding: 1.5rem;
 }
 
-.search-container {
+.pesquisar input::placeholder {
+    color: #7d7979;
+}
+
+.pesquisar button {
+    background-color: hsla(276, 100%, 24%, 0.749);
+    color: #f2f2f2;
+    border: none;
+    border-radius: 1.0rem;
+    padding: 1.0rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.pesquisar button:hover {
+    background-color: #333;
+    box-shadow: 0px 0px 50px 0px #414141;
+}
+
+.resultados-pesquisa {
+    width: 45rem;
+    color: #f2f3ff;
+    overflow-y: auto;
+    font-size: 1.%;
+    margin-top: 5rem;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+.item-resultado {
+    margin-bottom: 1rem;
+    border: solid 1px #333;
+    background-color: #15476d;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    text-align: justify;
+}
+
+.resultados-pesquisa h2 {
+    text-align: center;
+    color: #13c4c1;
+}
+
+.resultados-pesquisa a {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px; /* Espaçamento abaixo da barra de pesquisa */
+    text-decoration: overline;
+    color: #ffcd00;
+    font-weight: 200;
 }
 
-input[type="text"] {
-    padding: 10px;
-    width: 300px; /* Largura da barra de pesquisa */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
 
-button {
-    padding: 10px;
-    margin-left: 5px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007BFF; /* Cor do botão */
-    color: white;
-    cursor: pointer;
-}
 
-button:hover {
-    background-color: #0056b3; /* Cor do botão ao passar o mouse */
-}
 
-h2 {
-    font-size: 24px; /* Tamanho da fonte do nome do console */
-    margin: 20px 0; /* Espaçamento acima e abaixo do nome */
-}
-
-p {
-    font-size: 16px; /* Tamanho da fonte da descrição */
-    margin-bottom: 20px; /* Espaçamento abaixo da descrição */
-}
-
-.more-info {
-    display: inline-block;
-    margin-top: 10px;
-    color: #007BFF; /* Cor do link */
-    text-decoration: none; /* Remove o sublinhado */
-}
-
-.more-info:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
-}
 
 footer {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 14px; /* Tamanho da fonte do rodapé */
-    color: #666; /* Cor do texto do rodapé */
+    color: #f2f3ff;
+    width: 100%;
+    height: 4rem;
+    background-color: #7d7d7d;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    margin-top: auto;
 }

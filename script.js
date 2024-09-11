@@ -1,59 +1,28 @@
 function pesquisar() {
-    // Obtém a seção onde os resultados da pesquisa serão exibidos
-    let section = document.getElementById("resultados-pesquisa");
-    
-    let campoPesquisa = document.getElementById("campopesquisa").value;
-   
-    //se o campo de pesquisa for uma string vazia
-    if (campoPesquisa == "")
-       {
-        section.innerHTML = "<p>Nenhum jogo encontrado.</p>"
-        return;
-       }
+  let section = document.getElementById("resultados-pesquisa")
 
-     campoPesquisa = campoPesquisa.toLowerCase();  
+  let campoPesquisa = document.getElementById('barra-pesquisa').value.toLowerCase()
 
-    // Inicializa uma string para armazenar os resultados
-    let resultados = "";
-    let titulo = "";
-    let descricao = "";
-    let tags = "";
-    // Loop através de cada item em 'dados'
-    for (let dado of dados)
-   {   
-      titulo = dado.titulo.toLowerCase();
-      descricao = dado.descricao.toLowerCase();
-      tags = dado.tags.toLowerCase();
+  if (!campoPesquisa) {
+      section.style.display = "none"
+      return
+  }
 
-      //se titulo includes campoPesquisa entao faça...
-      if (titulo.includes(campoPesquisa) || descricao.includes(campoPesquisa) || tags.includes(campoPesquisa))
-      
-        //cria um novo elemento
-        
-       resultados += 
-      ` 
+  section.style.display = "block"
+  let resultado = ""
+  for (let t of games) {
+      if (t.titulo.toLowerCase().includes(campoPesquisa) || (t.tags.toLowerCase().includes(campoPesquisa))) {
+          resultado += `
           <div class="item-resultado">
-              <h2>
-                  <a href="#" target="_blank">${dado.titulo}</a>
-              </h2>
-              <p class="descricao-meta">
-                  ${dado.descricao}.
-                  <br>
-                  <a href="${dado.link}" target="_blank">Mais informações</a>
-              </p>
+                  <h2>${t.titulo}</h2>
+                  <p class="descricao-personagem">${t.descricao}</p>
+                  <a href="${t.link}" target="_blank">Informações adicionais</a>
           </div>
-      `;
-        
-      if (!resultados)
-      {
-        section.innerHTML = "<p>Nenhum jogo encontrado.</p>"    
-          
-      } 
-
-
-    }
-       
-
-    // Atualiza o conteúdo HTML da seção com os resultados gerados
-    section.innerHTML = resultados;
-} 
+      `
+      }
+  }
+  if (!resultado) {
+      resultado = "<h2>Nenhum resultado encontrado.</h2>"
+  }
+  section.innerHTML = resultado
+}

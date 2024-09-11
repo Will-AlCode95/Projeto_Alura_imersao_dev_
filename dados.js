@@ -1,4 +1,4 @@
-let dados = 
+let games = 
 [ 
     {
     
@@ -9,11 +9,11 @@ let dados =
   },
 
     {
-    
         titulo: "Mega Man",
         descricao: "Mega Man​​ conhecido no Japão como Rockman, é um jogo eletrônico de ação-plataforma desenvolvido e publicado pela Capcom para o Nintendo Entertainment System. É o primeiro jogo da série Mega Man. Foi lançado no Japão e na América do Norte em dezembro de 1987, e na Europa em dezembro de 1989.",
-        link:"https://pt.wikipedia.org/wiki/Mega_Man",
-        tags: "jogo retro anos 80"
+        link: "https://pt.wikipedia.org/wiki/Mega_Man",
+        tags: "jogo retro anos 80",
+        imagem: "./imagem_mega_man.jpg"
     },
 
     {
@@ -162,6 +162,51 @@ let dados =
       tags: "ação, sobrevivência, clássico"
   },
  
+  
+ 
+      {
+          titulo: "Age of Empires II",
+          descricao: "Age of Empires II é um jogo de estratégia em tempo real desenvolvido pela Ensemble Studios e publicado pela Microsoft. Lançado em 1999, o jogo se passa na Idade Média e permite ao jogador construir um império, gerenciar recursos e conquistar inimigos.",
+          link: "https://pt.wikipedia.org/wiki/Age_of_Empires_II",
+          tags: "estratégia tempo real clássico anos 90"
+      },
+  
+      {
+          titulo: "StarCraft",
+          descricao: "StarCraft é um jogo de estratégia em tempo real desenvolvido e publicado pela Blizzard Entertainment. Lançado em 1998, o jogo se passa em um futuro distante e é conhecido por seu equilíbrio entre as três raças jogáveis: Terrans, Zergs e Protoss.",
+          link: "https://pt.wikipedia.org/wiki/StarCraft",
+          tags: "estratégia tempo real sci-fi anos 90"
+      },
+  
+      {
+          titulo: "Civilization VI",
+          descricao: "Civilization VI é um jogo de estratégia por turnos desenvolvido pela Firaxis Games. Lançado em 2016, é a sexta edição da série Civilization, onde os jogadores devem construir e expandir sua civilização ao longo da história.",
+          link: "https://pt.wikipedia.org/wiki/Civilization_VI",
+          tags: "estratégia por turnos construção civilização"
+      },
+  
+      {
+          titulo: "Total War: Shogun 2",
+          descricao: "Total War: Shogun 2 é um jogo de estratégia em tempo real e por turnos, desenvolvido pela Creative Assembly. Lançado em 2011, o jogo se passa no Japão feudal e combina batalhas em larga escala com gerenciamento de impérios.",
+          link: "https://pt.wikipedia.org/wiki/Total_War:_Shogun_2",
+          tags: "estratégia tempo real por turnos Japão feudal"
+      },
+  
+      {
+          titulo: "Company of Heroes",
+          descricao: "Company of Heroes é um jogo de estratégia em tempo real desenvolvido pela Relic Entertainment, lançado em 2006. O jogo é ambientado na Segunda Guerra Mundial e é conhecido por seu sistema de coberturas e jogabilidade tática.",
+          link: "https://pt.wikipedia.org/wiki/Company_of_Heroes",
+          tags: "estratégia tempo real Segunda Guerra Mundial"
+      },
+      
+      {
+        titulo: "Minecraft",
+        descricao: "Minecraft é um jogo de construção e sobrevivência desenvolvido pela Mojang Studios. Lançado em 2011, os jogadores podem explorar mundos gerados aleatoriamente, coletar recursos, construir estruturas e enfrentar criaturas em um ambiente sandbox.",
+        link: "https://pt.wikipedia.org/wiki/Minecraft",
+        tags: "sandbox construção sobrevivência"
+    },
+
+
 
   ]
 
